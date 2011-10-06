@@ -1,0 +1,19 @@
+% General preamble
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+
+\usepackage{fixltx2e} 			% Typographical corrections to the LaTeX defaults
+\usepackage{graphicx}			% Enable support for images
+\usepackage{color}			% Enable support for colors
+
+
+% Macros for internal use
+\newcommand{\codesize}{\footnotesize}
+\newcommand{\code}[1]{\colorbox{black}{\makebox[\textwidth-3.5em]{\color{white}{\hspace{0.7em}\texttt{\codesize #1}\hfill}}} \\}
+
+
+% Macros for users
+\renewcommand{\dot}[1]{\pause\item #1 \\}
+\newcommand{\cmd}[2]{\pause\item #1 \\ \code{#2} \vspace{0.7em}}
+\newcommand{\link}[2]{\pause\item #1 \\ \href{#2}{\codesize\texttt{#2}} \vspace{0.7em}}
+\newcommand{\duodot}[2]{\dot{\makebox[\textwidth-5em]{#1 \hfill #2}}}
