@@ -1,0 +1,17 @@
+Dette er en presentasjonsmal for Programvareverkstedet, som benytter PowerDot-pakken i LaTeX samt noen hjemmelagde makroer.
+
+Huskeliste:
+ - Endre metadata'en til presentasjonen i `metadata.tex'
+ - Rediger filen `content.tex' for å endre presentasjonens innhold
+ - Bruk kommandoen `make' for å kompilere dokumentet
+ - Bruk `make clean' for å slette midlertidige filer
+
+Brukerguide:
+ - Hver hoveddel av en presentasjon markeres med en ny `\section{tittel}'
+ - Nye slides opprettes ved å benytte LaTeX-omgivelsen `slide'
+ - For å delvis avsløre en slide, bruk `\pause' der du vil vente litt med å avsløre mer av slide'n
+ - Innenfor omgivelser som støtter `\item', f.eks. `itemize', kan du benytte makroene `\dot', `\duodot', `\cmd' og `\link'.
+   - `\dot' tar ett argument, og genererer en `\pause' fulgt av en `\item' med argumentet
+   - `\duodot' oppfører seg som `\dot', men tar to argumenter; et som skal venstrestilles, og et som skal høyrestilles.
+   - `\link' oppfører seg som `\dot', men tar to argumenter; et tekstargument og en URL.
+   - `\cmd' oppfører seg som `\cmd', men tar to argumenter; et tekstargument og en kommando.
